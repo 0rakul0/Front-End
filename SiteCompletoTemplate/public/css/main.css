@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --cor-base:#3475ca;
+    --cor-texto:#ffffff;
+
+    --fundo-sobre:#162c3b;
+    --fundo-servicos:#12222d;
+    --fundo-tec:#3f8ffc;
+    --fundo-cliente:#162c3b;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.banner header .logo{
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+.banner header .toggle{
+    position: relative;
+    width: 35px;
+    height: 30px;
+    background: url(/public/assets/toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.banner img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+.banner .conteudo{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .conteudo h2{
+    color: var(--cor-texto);
+    font-size: 60px;
+}
+.banner .conteudo p{
+    color: var(--cor-texto);
+    font-size: 20px;
+}
+
+.sobre{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.sobre .conteudoBox{
+    background: var(--fundo-sobre);
+    padding: 100px;
+    width:50%;
+}
+.cabecalho{
+    color: var(--cor-texto);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.texto{
+    color: var(--cor-texto);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.sobre .imgBox{
+    align-items: center;
+    width: 50%;
+    background: rgb(197, 0, 0); 
+    display: flex;   
+}
+.sobre .imgBox img{
+    margin-top: 10%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.servicos{
+    background: var(--fundo-servicos);
+    padding: 100px;
+    text-align: center;
+}
+.servicos .conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.servicos .conteudo .servicosBox{
+    position: relative;
+    border-radius: 10px;
+    background: var(--cor-texto);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicos .conteudo .servicosBox img{
+    max-width: 100px;
+}
+.servicos .conteudo .servicosBox h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--fundo-servicos);
+}
+.tec{
+    background: var(--fundo-tec);
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tec .conteudoBox{
+    max-width: 800px;
+}
+.tec .imgBox{
+    max-width: 250px;
+}
+.tec .imgBox img{
+    max-width: 100%;
+}
+.cliente{
+    background: var(--fundo-cliente);
+    padding: 100px;
+    text-align: center;
+}
+.cliente .imgBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.cliente .imgBox img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+.cliente .imgBox img:hover{
+    opacity: 1;
+}
+.testemunhos{
+    position: relative;
+    padding: 100px ;
+    background: var(--fundo-servicos);
+    text-align: center ;
+}
+.testemunhos .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.testemunhos .conteudo .conteudoT{
+    background: var(--cor-texto);
+    padding: 60px 50px;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+}
+.testemunhos .conteudo .conteudoT p{
+    font-style: italic;
+    text-align: left;
+}
+.testemunhos .conteudo .conteudoT h3{
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+    color: var(--fundo-tec);
+    cursor: pointer;
+}
+.contato{
+    padding: 100px;
+    background: var(--fundo-cliente); 
+}
+.contatoForm{
+    position: relative;
+    display: flex;
+}
+.contatoForm .conteudoBox{
+    background: rgb(197, 0, 0);
+    padding: 10%;
+    width:50%;
+    display: flex;
+}
+.contatoForm .conteudoBox .inputBox{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.contatoForm .conteudoBox .inputBox input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--cor-texto);
+    border-bottom: 2px solid var(--cor-texto);
+}
+.contatoForm .conteudoBox .inputBox input::placeholder{
+    color: var(--cor-texto);
+}
+.contatoForm .conteudoBox .inputBox textarea{
+    width: 400px;
+    height: 150px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--cor-texto);
+    border-bottom: 2px solid var(--cor-texto);
+}
+.contatoForm .conteudoBox .inputBox textarea::placeholder{
+    color: var(--cor-texto);
+}
+.contatoForm .conteudoBox .inputBox input[type="submit"]{
+    width: 150px;
+    background: var(--cor-texto);
+    cursor: pointer;
+    color: var(--fundo-cliente);
+    font-weight: 400;
+}
+.contatoForm .imgBox{
+    background: url(/public/assets/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+}
+.rodape{
+    background: var(--fundo-cliente);
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto);
+}
+.rodape ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape ul li{
+    list-style: none;
+}
+.rodape ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.rodape ul li a img{
+     filter: invert(1);
+     max-width: 40px;
+}
