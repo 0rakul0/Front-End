@@ -19,5 +19,13 @@
         <span style="--i:9;"><img src="./public/img/eu.jpg" alt=""></span>
         <span style="--i:10;"><img src="./public/img/eu.jpg" alt=""></span>
     </div>
+
+    <script type="text/javascript">
+        let box = document.querySelector('.box');
+        window.onmousemove = function(e){
+            let x = e.clientX/5;
+            box.style.transform = "perspective(1000px) rotateY("+ x +"deg)";
+        }
+    </script>
 </body>
 </html>
