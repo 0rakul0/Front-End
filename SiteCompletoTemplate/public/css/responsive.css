@@ -1,4 +1,4 @@
-@media(max-width: 990px){
+@media(max-width: 800px){
     .banner{
         padding: 50px;
     }
@@ -14,12 +14,14 @@
     .sobre{
         flex-direction: column;
     }
-    .sobre .conteudoBox,
-    .sobre .imgBox{
+    .sobre .conteudoBox{
         width: 100%;
         padding: 50px;
         min-height: 400px;
         text-align: center;
+    }
+    .sobre .imgBox{
+        display: none;
     }
     .servicos{
         padding: 50px;
@@ -53,10 +55,13 @@
         padding: 50px;
     }
     .testemunhos .conteudoT{
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 60px 40px;
         max-width: 550px;
         margin-bottom: 20px;
+        margin-left: 10%;
     }
     .testemunhos .conteudoT:last-child{
         margin-bottom: 0;
@@ -69,6 +74,11 @@
     }
     .contatoForm .conteudoBox{
         width: 100%;
+    }
+    .conteudoForm .conteudoBox textarea{
+        margin: 0px;
+        width: 600px;
+        height: 145px;"
     }
     .rodape{
         padding: 20px 50px;
