@@ -22,10 +22,8 @@ body{
 }
 .calendario .Bgimg{
     width: 100%;
-    height: 200px;
-    background: url(../img/3.jpg);
-    background-size: cover;
-    padding: 40px 20px;
+    height: 80px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 .calendario .Bgimg .mes{
@@ -33,30 +31,20 @@ body{
     align-items: center;
     justify-content: space-between;
     text-align: justify;
-    color: #fff;
+    color: #000;
 }
-.calendario .Bgimg .mes i{
-    margin-top: 50px;
+.calendario .Bgimg i{
     cursor: pointer;
     font-size: 1.5em;
-    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.6);
-}
-.calendario .Bgimg h3,
-.calendario .Bgimg h4{
-
-    margin: 0;
-    padding: 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
 .calendario .Bgimg h3{
-    font-size: 20px;
-    font-weight: 500;
-}
-.calendario .Bgimg h4{
-    font-size: 14px ;
+    font-size: 24px;
     font-weight: 300;
+    margin: 25px 0;
+    padding: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
-
 .semana{
     margin: 5px 10px;
     display: grid;
@@ -92,14 +80,18 @@ body{
     transition: background-color 0.2s;
   }
   .days div:hover:not(.today) {
-    border: 1px solid rgb(167, 167, 167);
+    border: 1px solid #eee;
     cursor: pointer;
+    transition: 0.5s;
+    background-color: #eee;
+    border-radius: 50%;
   }
   .prev-date,
   .next-date {
     opacity: 0.5;
   }
   .today {
+    border-radius: 50%;
     background-color: #e24747;
+    cursor: pointer;
   }
-  
